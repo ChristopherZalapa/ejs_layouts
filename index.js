@@ -1,8 +1,10 @@
 const express = require('express');
+const ejsLayouts = require('express-ejs-layouts');
 const app = express();
 
 // Tell Express To Use EJS To Display Views
 app.set('view engine', 'ejs');
+app.use(ejsLayouts);
 
 // Home Page
 app.get('/', (req, res) => {
