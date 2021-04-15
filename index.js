@@ -4,6 +4,8 @@ const app = express();
 
 // Tell Express To Use EJS To Display Views
 app.set('view engine', 'ejs');
+
+// Middleware That Uses ejsLayouts
 app.use(ejsLayouts);
 
 // Home Page
